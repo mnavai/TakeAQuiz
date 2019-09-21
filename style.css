@@ -1,1 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 
+body{
+  font-family: 'Franklin Gothic Medium', cursive;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  margin: 0 auto;
+  
+}
+
+.quiz{
+  opacity: 0.9; 
+}
+
+h3 {
+
+  text-align: center;
+  font-weight: 100;
+  font-size: 22px; 
+}
+
+
+.button {
+
+  text-align: center;
+  font-weight: 50px; 
+   
+}
+
+
+
+#start:hover,
+#start:active {
+  background-color: tomato;
+  color: white;
+  border: 0.1em #371d0d solid;
+}
+
+@media only screen and (min-width: 0px) and (max-width:550px)
+{
+  body{
+  background-image:url("images/bgblue.jpg");
+  background-size: 100% 160%;
+  background-repeat: no-repeat;
+  padding-bottom : 10px;
+  }
+  .textBox {
+  
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  opacity: 0.95;
+  padding: 8px;
+  border-radius: 10px;
+  border-bottom-style: double;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+section > ul {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  list-style: none;
+
+}
+
+p{
+  margin-top: 30%;
+}
+#start{
+  
+  font-size: 14px;
+  font-weight: 500;
+  color:black;
+  background: orange;
+  cursor: pointer;
+  border-radius:8px;
+  padding: 5px 10px;
+  margin:0 auto;
+  margin-top: 40%;
+  
+}
+}
+
+@media only screen and (min-width: 551px) 
+{
+body{
+  background-image:url("images/bgblue.jpg");
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  padding-bottom : 10px;
+  }
+
+  .textBox {
+  
+  width: 600px;
+  height: 300px;
+  margin-top: 30px;
+  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  opacity: 0.95;
+  padding: 8px;
+  border-radius: 10px;
+  border-bottom-style: double;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+section > ul {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  list-style: none;
+
+}
+
+p{
+  margin-top: 10%;
+}
+#start{
+  
+  font-size: 14px;
+  font-weight: 500;
+  color:black;
+  background: orange;
+  cursor: pointer;
+  border-radius:8px;
+  padding: 5px 10px;
+  margin:0 auto;
+  margin-top: 10%;
+  
+}
+}
+
+@media only screen and (min-width: 850px) 
+{
+  body{
+  background-image:url("images/bgblue.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom : 20px;
+  }
+
+  .textBox {
+  width: 700px;
+  height: 300px;
+  margin-top: 30px;
+  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  opacity: 0.95;
+  padding: 8px;
+  padding-bottom:10px;
+  border-radius: 10px;
+  border-bottom-style: double;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+section > ul {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  list-style: none;
+
+}
+
+p{
+  margin-top: 10%;
+}
+
+#start{
+  
+  font-size: 14px;
+  font-weight: 500;
+  color:black;
+  background: orange;
+  cursor: pointer;
+  border-radius:8px;
+  padding: 5px 10px;
+  margin:0 auto;
+  margin-top: 10%;
+  
+}
+}
