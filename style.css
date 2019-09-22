@@ -15,10 +15,6 @@ body{
   
 }
 
-.quiz{
-  opacity: 0.9; 
-}
-
 h3 {
 
   text-align: center;
@@ -34,8 +30,6 @@ h3 {
    
 }
 
-
-
 #start:hover,
 #start:active {
   background-color: tomato;
@@ -43,20 +37,27 @@ h3 {
   border: 0.1em #371d0d solid;
 }
 
-@media only screen and (min-width: 0px) and (max-width:550px)
+@media only screen and (min-width: 0px) and (max-width:500px)
 {
   body{
   background-image:url("images/bgblue.jpg");
-  background-size: 100% 160%;
   background-repeat: no-repeat;
   padding-bottom : 10px;
+  background: cover;
   }
+
+  .quizHeader {
+   
+   height: 200px;
+   width: 100%;
+   opacity: 0.9; 
+}
   .textBox {
   
   width: 400px;
   height: 400px;
   margin-top: 10px;
-  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  background-image: url("images/textbox.jpg");
   opacity: 0.95;
   padding: 8px;
   border-radius: 10px;
@@ -80,6 +81,7 @@ section > ul {
 p{
   margin-top: 30%;
 }
+
 #start{
   
   font-size: 14px;
@@ -95,21 +97,26 @@ p{
 }
 }
 
-@media only screen and (min-width: 551px) 
+@media only screen and (min-width: 501px) and (max-width: 799px)
 {
 body{
   background-image:url("images/bgblue.jpg");
-  background-size: 100% 120%;
   background-repeat: no-repeat;
   padding-bottom : 10px;
+  background: cover;
+ 
   }
-
+  .quizHeader {
+   height: 300px;
+   width: 100%;
+   opacity: 0.9; 
+}
   .textBox {
   
   width: 600px;
   height: 300px;
   margin-top: 30px;
-  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  background-image: url("images/textbox.jpg");
   opacity: 0.95;
   padding: 8px;
   border-radius: 10px;
@@ -152,16 +159,23 @@ p{
 {
   body{
   background-image:url("images/bgblue.jpg");
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom : 20px;
+  background: cover;
+ 
   }
+
+  .quizHeader {
+   height: 400px;
+   width: 100%;
+   opacity: 0.9; 
+ }
 
   .textBox {
   width: 700px;
   height: 300px;
   margin-top: 30px;
-  background-image: url("https://www.solidbackgrounds.com/images/1600x900/1600x900-light-sky-blue-solid-color-background.jpg");
+  background-image: url("images/textbox.jpg");
   opacity: 0.95;
   padding: 8px;
   padding-bottom:10px;
