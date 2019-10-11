@@ -15,10 +15,12 @@ body{
   
 }
 
+
+
 h3 {
 
   text-align: center;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 22px; 
 }
 
@@ -26,15 +28,26 @@ h3 {
 .button {
 
   text-align: center;
-  font-weight: 50px; 
+  font-weight: 50px;
+  padding-top: 50%; 
    
 }
 
-#start:hover,
-#start:active {
+.button:hover,
+.button:active {
   background-color: tomato;
   color: white;
   border: 0.1em #371d0d solid;
+}
+
+.image {
+  
+  align-content: center; 
+}
+
+.hidden {
+
+  display: none;
 }
 
 @media only screen and (min-width: 0px) and (max-width:500px)
@@ -82,7 +95,7 @@ p{
   margin-top: 30%;
 }
 
-#start{
+.button{
   
   font-size: 14px;
   font-weight: 500;
@@ -95,6 +108,7 @@ p{
   margin-top: 40%;
   
 }
+
 }
 
 @media only screen and (min-width: 501px) and (max-width: 799px)
@@ -132,7 +146,7 @@ section > ul {
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 40px;
+  padding-top: 50px;
   list-style: none;
 
 }
@@ -140,7 +154,7 @@ section > ul {
 p{
   margin-top: 10%;
 }
-#start{
+.button{
   
   font-size: 14px;
   font-weight: 500;
@@ -150,9 +164,10 @@ p{
   border-radius:8px;
   padding: 5px 10px;
   margin:0 auto;
-  margin-top: 10%;
+  margin-top: 20%;
   
 }
+
 }
 
 @media only screen and (min-width: 850px) 
@@ -201,7 +216,7 @@ p{
   margin-top: 10%;
 }
 
-#start{
+.button{
   
   font-size: 14px;
   font-weight: 500;
@@ -211,7 +226,7 @@ p{
   border-radius:8px;
   padding: 5px 10px;
   margin:0 auto;
-  margin-top: 10%;
+  margin-top: 15%;
   
 }
 }
