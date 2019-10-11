@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
     <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
   </head>
-  <body>  
-    <header role="banner" class="header">
-      <section>  
+  <body> 
+    
+     <header role="banner" class="header">
+      <section >  
         <a href="index.html">
           <img class="quizHeader" src="images/header.png" alt="Header Image" />
         </a>  
@@ -16,26 +19,27 @@
       <section>
         <ul>
           <li class="sizeMe">Question:
-            <span>0</span>/10</li>
+            <span class="questionNumber">0</span>/6</li>
           <li class="sizeMe">Score:
-            <span>0</span>
+            <span class="score">0</span>
           </li>
         </ul>
       </section>
-    </header>
-    <main role="main" class="items">
-      <section class="textBox">
+     </header>
+     <main role="main" class="container"> 
+     <section role="region" class="textBox">
         <h3>Test 
           your general knowledge</h3>
         <p>This is a short and fun Quiz<br />
            to test your general knowledge</p>
-        <button type="button" id="start">Let's go</button>
+        <button type="button" class="startButton button">Let's go</button>
       </section>
-      <section class="js-questionBox"></section>
+      <section class="js-questionBox hidden"></section>
       <section class="js-responseBox"></section>
       <section class="js-finalBox"></section>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script src="index.js"></script>
       <script src="store.js"></script>
     </main>
   </body>
