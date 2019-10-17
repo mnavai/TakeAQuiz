@@ -1,5 +1,4 @@
 
-
 let questionNumber = 0;
 let score = 0;
 
@@ -23,12 +22,16 @@ function submitAnswer() {
     
     event.preventDefault();
 
-    if ($('input[type=radio]:checked').length <= 0) {
-       alert("Please select one of the answers");
-    }
+    
     $('.js-responseBox').show();
     $('.js-questionBox').hide();
-    
+    if ($('input[type=radio]:checked').length <= 0) {
+      
+       alert("Please select one of the answers");
+       $('.js-questionBox').show();
+ 
+    } else {
+
     let selected = $('input:checked');
     let answer = selected.val();
     let correct = `${store[questionNumber].correctAnswer}`;
@@ -52,7 +55,7 @@ function submitAnswer() {
       <h3>Correct Answer is: "${store[questionNumber].correctAnswer}"</h3>
       <button type="button" id="nextButton" class="button">Next</button></section>`
       );  
-    }   
+    } }  
   });
   
 }
@@ -71,11 +74,35 @@ function generateQuestion() {
   }
 }
 
+//displays question with its answer options
+/*function generateOptions(questionNumber) {
+  let formMaker = $(`<section class="textBox"><form id="myForm">
+    <fieldset>
+      <br >
+      <legend class="questionText">${store[questionNumber].question}</legend><br />
+    </fieldset>
+  </form></section>`);
+
+  let fieldSelector = $(formMaker).find('fieldset');
+
+  store[questionNumber].answers.forEach(function (answerValue, answerIndex) {
+    $(`<label class="sizeMe" for="${answerIndex}">
+        <input class="radio" type="radio" id="${answerIndex}" value="${answerValue}" name="answer" required>
+        <span>${answerValue}</span><br />
+      </label><br />
+      `).appendTo(fieldSelector);
+  });
+  $(`<button id="submitButton" class="button">Submit</button>`).appendTo(fieldSelector);
+  return formMaker;
+}*/
+
+
 function generateOptions(questionNumber) {
   $('.js-questionBox').html(`
       <section class="textBox"><legend>${store[questionNumber].question}</legend><br />
+     <form id="myForm">
       <fieldset>
-         <form id="myForm">
+         
          <br />
           <label>
             <input class="radio" type="radio" name="answer" id="answerIndex" value="${store[questionNumber].answers[0]}" required>
@@ -98,8 +125,9 @@ function generateOptions(questionNumber) {
           </label>
           <br />
           <button id="submitButton" class="button" role="button" value="Submit">Submit</button>
+          </fieldset>
          </form>
-      </fieldset>
+      
       </section>`);
       
 }
