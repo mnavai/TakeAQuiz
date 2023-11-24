@@ -2,7 +2,7 @@
 let questionNumber = 0;
 let score = 0;
 
- //start quiz
+ //starting of the quit
 function startQuiz() {
   
   $(".textBox").on("click", ".startButton", function (event) {
