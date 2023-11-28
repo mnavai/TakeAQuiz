@@ -74,28 +74,6 @@ function generateQuestion() {
   }
 }
 
-//displays question with its answer options
-/*function generateOptions(questionNumber) {
-  let formMaker = $(`<section class="textBox"><form id="myForm">
-    <fieldset>
-      <br >
-      <legend class="questionText">${store[questionNumber].question}</legend><br />
-    </fieldset>
-  </form></section>`);
-
-  let fieldSelector = $(formMaker).find('fieldset');
-
-  store[questionNumber].answers.forEach(function (answerValue, answerIndex) {
-    $(`<label class="sizeMe" for="${answerIndex}">
-        <input class="radio" type="radio" id="${answerIndex}" value="${answerValue}" name="answer" required>
-        <span>${answerValue}</span><br />
-      </label><br />
-      `).appendTo(fieldSelector);
-  });
-  $(`<button id="submitButton" class="button">Submit</button>`).appendTo(fieldSelector);
-  return formMaker;
-}*/
-
 
 function generateOptions(questionNumber) {
   $('.js-questionBox').html(`
